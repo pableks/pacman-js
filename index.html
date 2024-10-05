@@ -9,47 +9,7 @@
     margin-bottom: 20px; /* Adjust as needed */
 }
 
-#mobile-controls {
-            display: none;
-        }
 
-        /* Show mobile controls only on screens smaller than 768px */
-        @media screen and (max-width: 767px) {
-    #mobile-controls {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    #mobile-controls div {
-        display: flex;
-        justify-content: space-between;
-        width: 150px; /* Reduced from previous 200px */
-        margin: 10px 0;
-    }
-
-    #mobile-controls button {
-        width: 60px;
-        height: 60px;
-        font-size: 20px;
-        background-color: rgb(246, 184, 30); /* Applied color to buttons */
-        border: 2px solid #000;
-        border-radius: 10%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Specific styling for the middle row buttons */
-    #mobile-controls div button {
-        width: 70px; /* Slightly wider for left/right buttons */
-    }
-
-    
-    
-}
 	body{
 	display: flex;
 	justify-content: center;
@@ -410,7 +370,7 @@ footer{
 
 	
 	<body>
-		<button id="play"  onClick="document.getElementById('play').style.display = 'none'; document.getElementById('h2bestScore').style.display = 'block';document.getElementById('footer').style.display = 'none'; document.getElementById('mobile-controls').style.display = 'flex';document.getElementById('mobile').style.display = 'none'">Click aquí para iniciar</button>
+		<button id="play"  onClick="document.getElementById('play').style.display = 'none'; document.getElementById('h2bestScore').style.display = 'block';document.getElementById('footer').style.display = 'none'; document.getElementById('mobile').style.display = 'none'">Click aquí para iniciar</button>
 		<script src="script.js" charset="utf-8"></script>
 		<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a2/Pac-Man_Logo.svg/langfr-1920px-Pac-Man_Logo.svg.png" alt="Logo Pac-Man" id="logo">
 		<h2 id="mod">mod by trypablo</h2>
@@ -422,14 +382,7 @@ footer{
 		<div class="grid"></div>
 		<h2 id="h2bestScore" style="display: none">Your best score : <span id="bestScore">0</span></h2>
 		
-		<div id="mobile-controls">
-			<button id="up-btn">↑</button>
-			<div>
-			  <button id="left-btn">←</button>
-			  <button id="right-btn">→</button>
-			</div>
-			<button id="down-btn">↓</button>
-		  </div>
+
 		<footer id="footer">PAC-MAN™ & ©1980 BANDAI NAMCO Entertainment Inc.</footer>
 	<script>
 		window.addEventListener("keydown", function(e) {
